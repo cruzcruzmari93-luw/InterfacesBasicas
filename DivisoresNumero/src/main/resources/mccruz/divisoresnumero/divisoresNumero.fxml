@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mccruz.divisoresnumero.DivisoresNumeroController">
+    <children>
+        <Label text="Ingrese un número:" layoutX="20" layoutY="30"/>
+        <TextField fx:id="numero" layoutX="150" layoutY="20" prefWidth="150"/>
+        <Button text="Analizar" layoutX="310" layoutY="20" onAction="#analizarNumero"/>
+        <Button text="Limpiar" layoutX="380" layoutY="20" onAction="#limpiarCampo"/>
+        <Label text="Cantidad de cifras:" layoutX="20" layoutY="60"/>
+        <Label fx:id="lblCifras" layoutX="200" layoutY="60"/>
+        <Label text="Suma de cifras impares:" layoutX="20" layoutY="80"/>
+        <Label fx:id="lblSumaImpares" layoutX="200" layoutY="80"/>
+        <Label text="Suma de cifras pares:" layoutX="20" layoutY="100"/>
+        <Label fx:id="lblSumaPares" layoutX="200" layoutY="100"/>
+        <Label text="Suma total de cifras:" layoutX="20" layoutY="120"/>
+        <Label fx:id="lblSumaTotal" layoutX="200" layoutY="120"/>
+        <Label text="Cifra mayor:" layoutX="20" layoutY="140"/>
+        <Label fx:id="lblMayor" layoutX="200" layoutY="140"/>
+        <Label text="Cifra menor:" layoutX="20" layoutY="160"/>
+        <Label fx:id="lblMenor" layoutX="200" layoutY="160"/>
+        <ListView fx:id="listaDivisores" layoutX="250" layoutY="60"/>
+    </children>
+</AnchorPane>

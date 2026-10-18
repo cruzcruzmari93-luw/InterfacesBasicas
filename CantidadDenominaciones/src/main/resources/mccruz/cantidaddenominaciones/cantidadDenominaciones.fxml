@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mccruz.cantidaddenominaciones.CantidadDenominacionesController">
+    <children>
+        <Label text="Dinero:" layoutX="20" layoutY="30"/>
+        <TextField fx:id="dinero" layoutX="100" layoutY="20" prefWidth="150"/>
+        <Button text="Desglosar" layoutX="260" layoutY="20" onAction="#desglosarDinero"/>
+        <Button text="Limpiar" layoutX="340" layoutY="20" onAction="#limpiarCampo"/>
+        <TableView fx:id="tablaResultados" layoutX="20" layoutY="70" prefWidth="560" prefHeight="300">
+            <columns>
+                <TableColumn text="Denominación" fx:id="colDenominacion" prefWidth="280"/>
+                <TableColumn text="Cantidad" fx:id="colCantidad" prefWidth="280"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

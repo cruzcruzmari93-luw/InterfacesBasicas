@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mccruz.calcularedad.CalcularEdadController">
+    <children>
+        <Label text="Fecha de nacimiento (YYYY-MM-DD):" layoutX="20" layoutY="30"/>
+        <TextField fx:id="fecha" layoutX="250" layoutY="30"/>
+        <Button text="Calcular Edad" layoutX="250" layoutY="70" onAction="#calcularEdad"/>
+        <Button text="Limpiar" layoutX="350" layoutY="70" onAction="#limpiarCampo"/>
+        <Label fx:id="resultado" layoutX="250" layoutY="120"/>
+    </children>
+</AnchorPane>

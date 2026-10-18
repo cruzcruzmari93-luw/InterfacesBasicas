@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mccruz.gastossemanales.GastosSemanalesController">
+    <children>
+        <Label text="Alimentación:" layoutX="20" layoutY="25"/>
+        <TextField fx:id="txtAlimentacion" layoutX="100" layoutY="20"/>
+        <Label text="Refrigerios:" layoutX="20" layoutY="55"/>
+        <TextField fx:id="txtRefrigerios" layoutX="100" layoutY="50"/>
+        <Label text="Transporte:" layoutX="20" layoutY="85"/>
+        <TextField fx:id="txtTransporte" layoutX="100" layoutY="80"/>
+        <Label text="Telefonia:" layoutX="20" layoutY="115"/>
+        <TextField fx:id="txtTelefonia" layoutX="100" layoutY="110"/>
+        <Label text="Otros:" layoutX="20" layoutY="145"/>
+        <TextField fx:id="txtOtros" layoutX="100" layoutY="140"/>
+        <Button text="Calcular Estadisticas" layoutX="40" layoutY="180" onAction="#calcularEstadisticas"/>
+        <Button text="Limpiar" layoutX="180" layoutY="180" onAction="#limpiarCampo"/>
+        <Label  text="Estadísticas" layoutX="290" layoutY="20"/>
+        <Label text="Total semanal:" layoutX="290" layoutY="40"/>
+        <Label fx:id="lblTotal" layoutX="290" layoutY="60"/>
+        <Label text="Gasto mas alto:" layoutX="290" layoutY="80"/>
+        <Label fx:id="lblMayor" layoutX="290" layoutY="100"/>
+    </children>
+</AnchorPane>
